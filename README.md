@@ -212,3 +212,50 @@ int main(void)
 	
 	printf("Seu credito eh: R$%d", credito_i);
 }
+
+
+*QUESTÃO 05:
+Escrever um algoritmo que, dada uma quantia
+em reais, calcule o menor número possível de
+notas/moedas (100, 50, 20, 10, 5, 2 e 1) em que
+o valor pode ser decomposto.  
+
+int main (void)
+{
+	int valor, n100, n50, n20, n10, n5, n2, m1;
+	
+	printf ("Digite o  valor:\n");
+	scanf ("%d", &valor);
+	
+	
+	n100 = valor/100;
+	valor = valor%100;
+	
+	
+	n50 = valor/50;
+	valor = valor%50;
+	
+
+	n20 = valor/20;
+	valor = valor%20;
+	
+ 
+	n10 = valor/10;
+	valor = valor%10;
+	
+	
+	n5 = valor/5;
+	valor = valor%5;
+	
+	
+	n2 = valor/2;
+	valor = valor%2;
+	
+
+	m1 = valor/1;
+	valor = valor%1;
+	
+	printf ("%d notas de 100,\n%d notas de 50,\n%d notas de 20,\n%d notas de 10,\n%d notas de 5,\n%d notas de 2,\n%d moedas de 1", n100, n50, n20, n10, n5, n2, m1);
+	
+	
+}
